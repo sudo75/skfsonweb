@@ -1,0 +1,56 @@
+.piece {
+    background-size: calc(100% - 8px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    cursor: pointer;
+}
+
+
+.pawn-white {
+    background-image: url('../assets/w_pawn.png');
+}
+
+.pawn-black {
+    background-image: url('../assets/b_pawn.png');
+}
+
+.knight-white {
+    background-image: url('../assets/w_knight.png');
+}
+
+.knight-black {
+    background-image: url('../assets/b_knight.png');
+}
+
+.bishop-white {
+    background-image: url('../assets/w_bishop.png');
+}
+
+.bishop-black {
+    background-image: url('../assets/b_bishop.png');
+}
+
+.rook-white {
+    background-image: url('../assets/w_rook.png');
+}
+
+.rook-black {
+    background-image: url('../assets/b_rook.png');
+}
+
+.queen-white {
+    background-image: url('../assets/w_queen.png');
+}
+
+.queen-black {
+    background-image: url('../assets/b_queen.png');
+}
+
+.king-white {
+    background-image: url('../assets/w_king.png');
+}
+
+.king-black {
+    background-image: url('../assets/b_king.png');
+}

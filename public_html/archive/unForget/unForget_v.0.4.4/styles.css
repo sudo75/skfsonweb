@@ -1,0 +1,282 @@
+
+body * {
+    border-width: 1px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+    text-overflow: ellipsis;
+}
+
+.container div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.task {
+    display: flex;
+    border-left: solid gray 1px;
+    border-right: solid gray 1px;
+    padding: 5px;
+    padding-left: 8px;
+    text-align: left;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.task-list {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-container {
+    border: solid gray 2px;
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.task-container * {
+    
+}
+
+.task-status {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    user-select: none;
+}
+
+.grab-handle {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    user-select: none;
+    border-right: solid gray 1px;
+    cursor: grab;
+}
+
+.grab-handle:active {
+    cursor: grabbing;
+}
+
+.task-delete {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    user-select: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.menu {
+    width: 100%;
+    height: 40px;
+    margin: 15px;
+    display: flex;
+}
+.menu-Btn {
+    width: 100%;
+    margin: 2px;
+}
+
+.new-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+}
+
+.new-task * {
+    margin: 2px;
+}
+
+.new-task-label {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 4px;
+}
+.new-task-content {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.add-task {
+    height: 30px;
+}
+
+.input {
+    flex-grow: 1;
+    height: 30px;
+    box-sizing: border-box;
+    padding-left: 8px;
+}
+
+.edit-container {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 30px;
+}
+
+.submit-edit {
+    height: 100%;
+}
+
+
+.btn {
+    cursor: pointer;
+}
+.btn:hover {
+    transform: scale(1.01);
+    border: solid gray 1px;
+}
+.btn:active {
+    transform: scale(0.98);
+}
+
+.lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.lists * {
+    margin: 2px;
+}
+
+.list-creator {
+    display: flex;
+    justify-content: left;
+    width: 35%;
+    flex-grow: 1;
+    min-width: 120px;
+}
+#btn-new-list {
+    width: 30%;
+    min-width: 40px;
+}
+#new-list-name {
+    min-width: 75px;
+    width: 70%;
+    flex-shrink: 1;
+}
+
+
+
+.list-selector {
+    display: flex;
+    border: solid gray 1px;
+    justify-content: space-evenly;
+    width: 60%;
+    min-width: 350px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.list-link {
+    display: flex;
+    align-items: center;
+}
+
+.ctx-menu {
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    flex-shrink: 1;
+}
+
+.list_ctx-menu {
+}
+
+.ctx-menu-btn {
+    height: 40px;
+    width: 100%;
+    border: none;
+}
+
+
+.default_ctx-menu {
+}
+
+
+.console {
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    bottom: 10px;
+    width: 90%;
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: lightgrey;
+    border: 1px solid black;
+    opacity: 0;
+}
+
+
+.list-edit-menu {
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(245, 245, 245);
+    height: 80px;
+    width: 80%;
+}
+
+.list-edit-container {
+    padding-top: 3px;
+    display: flex;
+    height: 35px;
+    width: 90%;
+}
+
+.list-edit-head {
+    display: flex;
+    height: 35px;
+    width: 90%;
+}
+
+.list-edit-head > * {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.list-edit-container > * {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

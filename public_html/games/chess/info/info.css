@@ -1,0 +1,10 @@
+.container {
+    width: 90%;
+}
+
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unForget - Info</title>
+    <link rel="icon" href="../assets/favicon.png">
+
+    <link rel="stylesheet" href="info.css">
+</head>
+<body>
+    <div class="container">
+        <h1>unForget - Info<sup style="font-size: 50%;"></sup></h1>
+        <p id="version">Err</p>
+        
+        
+        <div class="hyperlinks">
+            <a href="../index.html" class="hyperlink">Return to unForget</a>
+            <a href="../settings/settings.html" class="hyperlink">Settings</a>
+        </div>
+
+        <hr>
+        
+        <div class="about">
+            <h2>About</h2>
+            <p>
+                unForget is a web based to-do list app, built with HTML 5, JavaScript, and CSS by a man who has no idea what he is doing.
+            </p>
+        </div>
+
+        <div class="features">
+            <h2>Main Features and Documentation</h2>
+
+            <h3>Lists:</h3>
+            <p>
+                unForget supports the creation of multiple lists.
+                You must have at least one list to add tasks.
+                To create a list, navigate to the list creation form and type a name for it.
+                Then, press "enter" on your keyboard or the "new" button to submit the form.
+                To select a different list, click its list link in the list bar.
+                Right click on a list link to open a context menu.
+                Then, options to open, delete, and edit the list will be available.
+            </p>
+
+            <h3>Tasks:</h3>
+            <p>
+                When a list is selected, tasks can be added to it by typing into the task creation form and submitting it.
+                Tasks can also be marked as complete by clicking on the empty box; they can be marked incomplete by clicking again on the box.
+                By clicking the X and confirming it, a task can be deleted.
+                The order of tasks can be changed by dragging from the handle and dropping it over a pre-existing task.
+                This will move the dragged task to the position of the task it is dropped on.
+            </p>
+
+            <h3>Menu Bar:</h3>
+            <p>
+                This feature is off be default.
+                It can be enabled from the settings menu.
+                If enabled, use the shortcut buttons on the menu bar (at the top of the page) to save time.
+            </p>
+
+            <h3>Page Context Menu:</h3>
+            <p>
+                The general context menu can be accessed by right clicking on the page.
+                This will provide usefuln shortcuts.
+                By right clicking on a task list in the list bar, another context menu will open.
+                Learn more about this type of context menu under "Lists".
+            </p>
+
+            <h3>Due Dates: <sup class="sup">new</sup></h3>
+            <p>
+                To use due dates, right click on a task and select the due date option on the context menu.
+                A menu will open, and a due date and time can be selected. 
+                The task's styling will change depending on how close the due date is.
+                It will be bolded if any date is set, orange if the date is within 72h, red if it is within 24h, and black if it is overdue.
+            </p>
+
+            <h3>Notifications: <sup class="sup">new</sup></h3>
+            <p>
+                If enabled, a notification will be sent at a set time every day.
+                It will outline when tasks must be completed and how many are outstanding.
+                A notifications will also be sent, periodically, before a task's due date - 7 days, 3 days, 24 hours, and 3 hours before.
+                At the time a task is due, a notification will also be sent.
+                If a due date is selected without a due time, the notification will come at 00:00.
+                
+            </p>
+
+            <h3>Settings:</h3>
+            <p>
+                Right clicking on the app page to open the general context menu, and selecting the settings option will open the settings page.
+                This feature is still being worked on. 
+            </p>
+
+            <h3>More Info:</h3>
+                <h4>Confirmation Override:</h4>
+                <p>
+                    All confirmation alerts can be overridden by holding down the "shift" key when performing the action.
+                </p>
+        </div>
+
+        <br>
+        <hr>
+
+
+        <h2>Changelog</h2>
+        <button class="btn" id="changelog-toggle">Expand</button>
+        <div class="changelog" style="display: none;">
+
+            <div class="info-version">
+                <h3>Current: [0.5.0] - 2024-03-29</h3>
+
+                <h4>Added:</h4>
+                <ul class="added">
+                    <li>Settings Page</li>
+                        <ul>
+                            <li>General toggle</li>
+                                <ul>
+                                    <li>Menu bar</li>
+                                </ul>
+                            <li>Quick hyperlinks</li>
+                            <li>Toggle confimation dialogues</li>
+                                <ul>
+                                    <li>Menu buttons</li>
+                                    <li>Task delete</li>
+                                    <li>List buttons</li>
+                                </ul>
+                            <li>Notifications</li>
+                                <ul>
+                                    <li>Daily notification toggle</li>
+                                    <li>Daily notification time</li>
+                                    <li>Due date notifications</li>
+                                </ul>
+                            <li>Reset</li>
+                                <ul>
+                                    <li>Reset data</li>
+                                    <li>Reset settings</li>
+                                </ul>
+                        </ul>
+                    <li>Due dates</li>
+                        <ul>
+                            <li>Urgency styling for tasks based on due dates</li>
+                            <li>Context menu for setting and eding due dates</li>
+                        </ul>
+                    <li>Notifications</li>
+                        <ul>
+                            <li>Daily Reminders at a set time</li>
+                            <li>Reminders for upcoming tasks before their due dates - 7d, 3d, 24h - at at the due date</li>
+                        </ul>
+                    <li>Hyperlinks can be accessed from unForget (if enabled)</li>
+                    <li>Page favicon</li>
+                    
+                </ul>
+
+                <h4>Changed:</h4>
+                <ul class="changed">
+                    <li>Info page updated with expand/collapse menu for changelog</li>
+                    <li>Confirmation dialogue appears when clicking off of list editing box</li>
+                    <li>Task will apear grey when completed</li>
+                </ul>
+
+                <h4>Fixed:</h4>
+                <ul class="fixed">
+                    
+                </ul>
+            </div>
+
+                <div class="info-version">
+                    <h3>Released: [0.4.4] - 2024-03-21</h3>
+
+                    <h4>Added:</h4>
+                    <ul class="added">
+                        <li>Code for the settings page - for future use</li>
+                    </ul>
+
+                    <h4>Changed:</h4>
+                    <ul class="changed">
+                        <li>New version.js file will be used to display unForget version throughout the site</li>
+                        <li>In development settings page will be hidden from users</li>
+                        <li>Menu bar removed</li>
+                        <li>Task deletion no longer prompts a confirmation</li>
+                        <li>Updated info page with changelog; removed CHANGELOG.md hyperlink</li>
+                    </ul>
+
+                    <h4>Fixed:</h4>
+                    <ul class="fixed">
+                        <li>Fixed Bug #5</li>
+                        <li>Fixed Bug #10</li>
+                        <li>Fixed Bug #11</li>
+                        <li>Fixed typos on the info page</li>
+                    </ul>
+                </div>
+
+                <div class="info-version">
+                    <h3>Released: [0.4.3] - 2024-03-19</h3>
+
+                    <h4>Added:</h4>
+                    <ul class="added">
+
+                    </ul>
+
+                    <h4>Changed:</h4>
+                    <ul class="changed">
+                        
+                    </ul>
+
+                    <h4>Fixed:</h4>
+                    <ul class="fixed">
+                        <li>Fixed Bug #7</li>
+                        <li>Fixed Bug #8</li>
+                        <li>Fixed Bug #9</li>
+                    </ul>
+                </div>
+
+                <div class="info-version">
+                    <h3>Released: [0.4.2] - 2024-03-17</h3>
+
+                    <h4>Added:</h4>
+                    <ul class="added">
+
+                    </ul>
+
+                    <h4>Changed:</h4>
+                    <ul class="changed">
+                        <li>Button and task styling change</li>
+                    </ul>
+
+                    <h4>Fixed:</h4>
+                    <ul class="fixed">
+                        <li>Fixed version error on info page</li>
+                        <li>Updated Changelog versioning</li>
+                    </ul>
+                </div>
+
+                <div class="info-version">
+                    <h3>Released: [0.4.1] - 2024-03-08</h3>
+
+                    <h4>Added:</h4>
+                    <ul class="added">
+                        <li>Settings page - feature incomplete</li>
+                    </ul>
+
+                    <h4>Changed:</h4>
+                    <ul class="changed">
+                        <li>Confirmation upon list delete</li>
+                        <li>Text selection no longer allowed</li>
+                        <li>List edit menu shows original text upon opening</li>
+                        <li>New list form to be cleared after submitting</li>
+                        <li>Console apears larger with a border and background</li>
+                        <li>Lowered threshold for flex wrapping for list selection bar</li>
+                        <li>Max lists now increased to 5</li>
+                    </ul>
+
+                    <h4>Fixed:</h4>
+                    <ul class="fixed">
+                        <li>Fixed typos on info page</li>
+                        <li>Text overflow patch mobile or smaller displays</li>
+                        <li>Fixed Bug #6</li>
+                    </ul>
+                </div>
+
+                <div class="info-version">
+                    <h3>Released: [0.4.0] - 2024-03-03</h3>
+
+                    <h4>Added:</h4>
+                    <ul class="added">
+                        <li>List creation - up to 4</li>
+                            <ul>
+                                <li>Changes to data structure to support multiple lists</li>
+                                <li>List navigation</li>
+                                <li>List name editing prompt</li>
+                                <li>Auto naming for missing name case</li>
+                            </ul>
+                        <li>Default context menu</li>
+                            <ul>
+                                <li>Reload</li>
+                                <li>Info page</li>
+                            </ul>
+                        <li>List tray context menu</li>
+                            <ul>
+                                <li>Open list</li>
+                                <li>Edit list</li>
+                                <li>Delete list</li>
+                            </ul>
+                        <li>unForget info page</li>
+                            <ul>
+                                <li>Hyperlink shortcuts to unForget and CHANGELOG.md</li>
+                                <li>About section</li>
+                                <li>Main features and documentation</li>
+                            </ul>
+                    </ul>
+
+                    <h4>Changed:</h4>
+                    <ul class="changed">
+                        <li>Cursor when hovering over buttons is set to pointer</li>
+                    </ul>
+
+                    <h4>Fixed:</h4>
+                    <ul class="fixed">
+                        
+                    </ul>
+                </div>
+
+                <div class="info-version">
+                    <h3>Released: [0.3.0] - 2024-02-11</h3>
+
+                    <h4>Added:</h4>
+                    <ul class="added">
+                        <li>Quick delete button for the menu bar: a button to easily delete all tasks marked as complete</li>
+                        <li>Button travel</li>
+                        <li>Drag and drop tasks</li>
+                    </ul>
+
+                    <h4>Changed:</h4>
+                    <ul class="changed">
+                        <li>Name change from "Do Tomorrow" to "unForget"</li>
+                    </ul>
+
+                    <h4>Fixed:</h4>
+                    <ul class="fixed">
+                        <li>Fix Bug #2</li>
+                        <li>Fix Bug #3</li>
+                    </ul>
+                </div>
+
+                <div class="info-version">
+                    <h3>Released: [0.2.0] - 2023-11-19</h3>
+
+                    <h4>Added:</h4>
+                    <ul class="added">
+                        <li>Edit tasks</li>
+                        <li>Menu bar with shortcut buttons</li>
+                            <ul>
+                                <li>Delete all tasks</li>
+                                <li>Mark all tasks as complete</li>
+                                <li>Mark all tasks as incomplete</li>
+                            </ul>
+                        <li>Enter key functionality for submitting a form</li>
+                    </ul>
+
+                    <h4>Changed:</h4>
+                    <ul class="changed">
+                        <li>Clear input value after submitting</li>
+                        <li>Improved UI</li>
+                    </ul>
+
+                    <h4>Fixed:</h4>
+                    <ul class="fixed">
+                        <li>Fix Bug #1</li>
+                    </ul>
+                </div>
+
+                <div class="info-version">
+                    <h3>Released: [0.1.0] - 2023-11-12</h3>
+
+                    <h4>Initial Release:</h4>
+                    <ul class="initial">
+                        <li>Add tasks</li>
+                        <li>Delete tasks</li>
+                        <li>Marking tasks as complete</li>
+                        <li>Shift to override confirmations</li>
+                        <li>Menu bar with shortcut buttons</li>
+                        <li>Tasks save to Local Storage</li>
+                    </ul>
+                </div>
+        </div>
+
+    </div>
+
+    <script type="module">
+        import {version} from '../version.js';
+        document.getElementById("version").innerText = `${version.semantic} (${version.date})`;
+
+        const changelog_toggle = document.getElementById("changelog-toggle");
+        const changelog_ele = document.querySelector('.changelog');
+
+        changelog_toggle.addEventListener('click', () => {
+            if (changelog_ele.style.display === "none") {
+                changelog_ele.style.display = "block";
+                
+                changelog_toggle.innerText = "Collapse";
+            } else {
+                changelog_ele.style.display = "none";
+                changelog_toggle.innerText = "Expand";
+            }
+        });
+
+    </script>
+    
+</body>
+</html>

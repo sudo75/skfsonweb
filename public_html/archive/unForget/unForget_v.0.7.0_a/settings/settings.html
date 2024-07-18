@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unForget - Settings</title>
+    <link rel="icon" href="../assets/favicon.png">
+
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="container">
+        <h1>unForget - Settings<sup></sup></h1>
+        <p id="version">Err</p>
+        
+        <div class="hyperlinks">
+            <a href="../index.html" class="hyperlink">Return to unForget</a>
+            <a href="../info/info.html" class="hyperlink">Information & Documentation</a>
+        </div>
+    
+        <hr>
+        
+        <div class="content">
+
+            <div class="settings-container">
+                <h2>Features:</h2>
+
+                <div class="setting">
+                    <input class="toggle" id="tog-gen-menuBar" type="checkbox"></input>
+                    <p class="setting-label">Menu Bar</p>
+                    <p class="setting-desc">Shortcuts for manipulating lists.</p>
+                </div>
+
+                <div class="setting">
+                    <input class="toggle" id="tog-gen-hyperlinks" type="checkbox"></input>
+                    <p class="setting-label">Quick Hyperlinks</p>
+                    <p class="setting-desc">Shortcuts to the settings and information pages.</p>
+                </div>
+                
+            </div>
+
+            <div class="settings-container">
+                <h2>Confirmation Dialogues:</h2>
+
+                <div class="setting">
+                    <input class="toggle" id="tog-conf-menuBtns" type="checkbox"></input>
+                    <p class="setting-label">Menu Buttons</p>
+                    <p class="setting-desc"></p>
+                </div>
+
+                <div class="setting">
+                    <input class="toggle" id="tog-conf-taskDel" type="checkbox"></input>
+                    <p class="setting-label">Task Delete</p>
+                    <p class="setting-desc"></p>
+                </div>
+
+                <div class="setting">
+                    <input class="toggle" id="tog-conf-listDel" type="checkbox"></input>
+                    <p class="setting-label">List Delete</p>
+                    <p class="setting-desc"></p>
+                </div>
+            </div>
+
+            <div class="settings-container">
+                <h2>Notifications:</h2>
+
+                <div class="setting">
+                    <input class="toggle" id="tog-notif-daily" type="checkbox"></input>
+                    <p class="setting-label">Daily Task Notifications</p>
+                    <p class="setting-desc">This will send a daily reminder to complete tasks.</p>
+                </div>
+
+                <div class="setting">
+                    <input class="time" id="time-notif-daily" type="time"></input>
+                    <p class="setting-label">Daily Reminder time</p>
+                    <p class="setting-desc"></p>
+                </div>
+
+                <div class="setting">
+                    <input class="toggle" id="tog-notif-due" type="checkbox"></input>
+                    <p class="setting-label">Due Date Notifications</p>
+                    <p class="setting-desc">Periodic reminders: 7 days, 3 days, 24 hours, and 3 hours before & at due time.</p>
+                </div>
+            </div>
+
+            <br>
+            <hr>
+
+            <div class="reset-container">
+                <h2>Reset:</h2>
+
+                <div class="reset-wrapper">
+                    <div class="reset">
+                        <button class="btn btn-reset" id="reset-data">Reset Data</button>
+                        <p class="reset-label"></p>
+                        <p class="reset-desc">Careful! This will delete all lists and their data.</p>
+                    </div>
+    
+                    <div class="reset">
+                        <button class="btn btn-reset" id="reset-settings">Reset Settings</button>
+                        <p class="reset-label"></p>
+                        <p class="reset-desc">Careful! This will revert all settings to their defaults.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    
+    <script type="module" src="settings.js"></script>
+    <script type="module">
+        import {version} from '../version.js';
+        document.getElementById("version").innerText = `${version.semantic} (${version.date})`;
+
+        /*
+        if (!version.dev) {
+            const content = document.querySelector('.content');
+            content.remove();
+
+            const container = document.querySelector('.container');
+
+            const altText = document.createElement("p");
+            altText.innerText = "This feature is still being worked on..."
+
+            container.appendChild(altText);
+        }
+        */
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="vega.css">
+</head>
+<body id = "body">
+    <section>
+        <div class="output">
+        <p id="formula">‎<p>
+            <p id="display"></span>‎</p>
+            <div>
+
+            </div>
+        <div class="buttons">
+
+            <button onclick="fOpenBracket(); character(1)"><div class="button">(</div></button>
+            <button onclick="fClosedBracket(); character(1)"><div class="button">)</div></button>
+            <button onclick="fClear()"><div class="button">C</div></button>
+            <button onclick="fDel()"><div class="button">Del</div></button>
+            <button onclick="f7(); character(1)"><div class="button">7</div></button>
+            <button onclick="f8(); character(1)"><div class="button">8</div></button>
+            <button onclick="f9(); character(1)"><div class="button">9</div></button>
+            <button onclick="fAdd(); character(3)"><div class="button">+</div></button>
+            <button onclick="f4(); character(1)"><div class="button">4</div></button>
+            <button onclick="f5(); character(1)"><div class="button">5</div></button>
+            <button onclick="f6(); character(1)"><div class="button">6</div></button>
+            <button onclick="fSubtract(); character(3)"><div class="button">-</div></button>
+            <button onclick="f1(); character(1)"><div class="button">1</div></button>
+            <button onclick="f2(); character(1)"><div class="button">2</div></button>
+            <button onclick="f3(); character(1)"><div class="button">3</div></button>
+            <button onclick="fMultiply(); character(3)"><div class="button">*</div></button>
+            <button onclick="fDecimal(); character(3)"><div class="button">.</div></button>
+            <button onclick="f0(); character(1)"><div class="button">0</div></button>
+            <button onclick="fEquals()"><div class="button">=</div></button>
+            <button onclick="fDivide(); character(3);"><div class="button">/</div></button>
+            <button onclick="fPi(); character(3)"><div class="button">π</div></button>
+            <button onclick="fe(); character(3)"><div class="button">e</div></button>
+            <button onclick="fSquare(); character(4)"><div class="button">x^2</div></button>
+            <button onclick="fSquareRoot(); character(11)"><div class="button">x(2nd Root)</div></button>
+            <button onclick="fFactorial(); character(11)"><div class="button">factorial(x)</div></button>
+            <button onclick="fLog(); character(7)"><div class="button">log(10)</div></button>
+            <button onclick="fCube(); character(5)"><div class="button">x^3</div></button>
+            <button onclick="fCubeRoot(); character(11)"><div class="button">x(3rd Root)</div></button>
+            <button onclick="fInverse()"><div class="button">Inv</div></button>
+            <button onclick="fNatLog(); character(8)"><div class="button">log(e)</div></button>
+            <button onclick="fExponent(); character(3)"><div class="button">x^y</div></button>
+            <button onclick="fRoot(); character(9)"><div class="button">x(Yth Root)</div></button>
+            <button onclick="fSetting()"><div class="button" id="setting">Setting: Rad</div></button>
+            <button onclick="fSin()"><div class="button" id="sin">Sin</div></button>
+            <button onclick="fCos()"><div class="button" id="cos">Cos</div></button>
+            <button onclick="fTan()"><div class="button" id="tan">Tan</div></button>
+
+
+            </div>
+            
+            <p id="note"></p>
+            <br>
+            <div id="consoleContent"></div>
+        </div>
+    </section>
+    <script src="vega.js"></script>
+
+</body>
+</html>

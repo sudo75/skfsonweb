@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessJS</title>
+    <link rel="stylesheet" href="./css/global/layout.css">
+    <link rel="stylesheet" href="css/chess.css">
+    <link rel="stylesheet" href="css/pieces.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">ChessJS<sup>v.1.0.0</sup></h1>
+    </div>
+    <!-- <button id="test">test</button> -->
+    <div class="main">
+        <div class="container">
+            <div class="board_head">
+                <h1 class="heading_txt">Game Unloaded</h1>
+            </div>
+            <div class="board_container">
+                <div class="sidebar">
+                    <div class="time">
+                        <div class="label time_label">White:</div>
+                        <div class="time_display time_white">00:00.000</div>
+                    </div>
+                    <hr>
+                    <div class="stats">
+                        <div class="label stats_label">Stats:</div>
+                        <hr class="small_hr">
+                        
+                        <div class="stat_container">
+                            <div class="stat_label">Mat Val:</div>
+                            <div class="stat stat_matVal_white">--</div>
+                        </div>
+
+                        <!--                        
+                        <hr class="small_hr">
+
+                        <div class="stat_container">
+                            <div class="stat_label">Avg. Turn:</div>
+                            <div class="stat stat_avgTurnLength_white">0 sec</div>
+                        </div>
+
+                        <hr class="small_hr">
+
+                        <div class="stat_container">
+                            <div class="stat_label">Eval:</div>
+                            <div class="stat eval_white">---</div>
+                        </div>
+                        -->
+
+                        <hr class="small_hr">
+
+                    </div>
+                    
+                </div>
+                <div class="board">
+                
+                </div>
+                <div class="sidebar">
+                    <div class="time">
+                        <div class="label time_label">Black:</div>
+                        <div class="time_display time_black">00:00.000</div>
+                    </div>
+
+                    <hr>
+
+                    <div class="stats">
+                        <div class="label stats_label">Stats:</div>
+                        <hr class="small_hr">
+                        
+                        <div class="stat_container">
+                            <div class="stat_label">Mat Val:</div>
+                            <div class="stat stat_matVal_black">--</div>
+                        </div>
+
+                        <hr class="small_hr">
+
+                        <!--
+                        <div class="stat_container">
+                            <div class="stat_label">Avg. Turn:</div>
+                            <div class="stat stat_avgTurnLength_black">0 sec</div>
+                        </div>
+
+                        <hr class="small_hr">
+
+                        <div class="stat_container">
+                            <div class="stat_label">Eval:</div>
+                            <div class="stat eval_black">---</div>
+                        </div>
+
+                        <hr class="small_hr">
+                        -->
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="board_foot">
+                <div class="btn_container">
+                    <button class="btn resign btn_unavailable">Resign</button>
+                    <button class="btn newGame">New Game</button>
+                    <button class="btn draw btn_unavailable">Draw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="info/info.html" class="hyperlink">Information and Documentation</a>
+    </div>
+
+    <script type="module" defer src="game/game.js"></script>
+    <script type="module" defer src="game/chess/pieces.js"></script>
+    <script type="module" defer src="game/chess/board.js"></script>
+
+    <script src="game/page/page.js"></script>
+    <script src="game/helpers/cssHelper.js"></script>
+
+</body>
+</html>

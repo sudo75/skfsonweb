@@ -1,0 +1,33 @@
+
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h4 {
+    margin-left: 20px;
+}
+
+p {
+    margin: 20px;
+    margin-left: 30px;
+}
+
+.hyperlinks {
+    display: flex;
+}
+
+.hyperlink {
+    margin: auto;
+}

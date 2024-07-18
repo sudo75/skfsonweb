@@ -1,0 +1,8 @@
+{
+    "type": "release",
+    "name": "1.0.0",
+    "displayName": "v.1.0.0",
+    "dev": "false",
+    "date": "2024-05-25",
+    "description": "ChessJS is a chess program made with HyperText Markup Language, JavaScript, and Cascading Style Sheets by a guy without the slightest clue of what he's doing."
+}

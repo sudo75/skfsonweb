@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unForget</title>
+    
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>unForget</h1>
+        </div>
+        <div class="header">
+            <div class="menu">
+                <button class="btn menu-Btn" id="btn-del-all">Delete All</button>
+                <button class="btn menu-Btn" id="btn-complete-all">All Complete</button>
+                <button class="btn menu-Btn" id="btn-incomplete-all">All Incomplete</button>
+                <button class="btn menu-Btn" id="btn-del-all-complete">Delete All Complete</button>
+    
+            </div>
+            <div class="lists">
+                <div class="list-creator">
+                    <input class="input" type="text" id="new-list-name" name="new-list-name" autocomplete="off" maxlength="20">
+                    <button class="btn new-list" id="btn-new-list">New</button>
+                </div>
+                <div class="list-selector">
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="new-task">
+            <label class="new-task-label" for="new-task-text">Enter Task: </label>
+            <div class="new-task-content">
+                <input class="input" type="text" id="new-task-text" name="new-task-text" autocomplete="off" maxlength="100">
+                <button class="btn add-task" id="add-task">Add Task</button>
+            </div>
+        </div>
+        
+        <div class="task-list">
+
+        </div>
+
+        <div class="console" id="console"></div>
+        
+    </div>
+
+    <footer>
+        <hr>
+        <div class="hyperlinks">
+            <a href="./settings/settings.html" class="hyperlink">Settings</a>
+            <a href="./info/info.html" class="hyperlink">Information & Documentation</a>
+        </div>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./version.js"></script>
+    <script type="module">
+        //Menu bar html
+        import {settings} from './settings/settings.js';
+
+        if (!settings.gen.menu_bar) {
+            const menu = document.querySelector('.menu');
+            menu.remove();
+        }
+
+        if (!settings.gen.hyperlinks) {
+            const hyperlinks = document.querySelector('.hyperlinks');
+            hyperlinks.remove();
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="output">
+        
+        <p id="previousNum">Enter a value</p>
+        <p id="operate">Select an operator</p>
+        <p id="currentNum" type="text" >Enter a value</p>
+            <p id="display">Answer</p>
+            <div>
+
+            </div>
+        <div class="buttons">
+            <button onclick="fClear()"><div class="button">C</div></button>
+            <button onclick="fDivide(); fOperation()"><div class="button">/</div>
+            <button onclick="fMultiply(); fOperation()"><div class="button">*</div>
+            <button onclick="fSubtract(); fOperation()"><div class="button">-</div>
+            <button onclick="f7(); fNum()"><div class="button number">7</div>
+            <button onclick="f8(); fNum()"><div class="button number">8</div>
+            <button onclick="f9(); fNum()"><div class="button number">9</div>
+            <button onclick="fAdd(); fOperation()"><div class="button">+</div>
+            <button onclick="f4(); fNum()"><div class="button number">4</div>
+            <button onclick="f5(); fNum()"><div class="button number">5</div>
+            <button onclick="f6(); fNum()"><div class="button number">6</div>
+            <button onclick="fExponent(); fOperation()"><div class="button">^</div>
+            <button onclick="f1(); fNum()"><div class="button number">1</div>
+            <button onclick="f2(); fNum()"><div class="button number">2</div>
+            <button onclick="f3(); fNum()"><div class="button number">3</div>
+            <button onclick="fRoot(); fOperation()"><div class="button">√</div>
+            <button onclick="fDecimal()"><div class="button">.</div>
+            <button onclick="f0(); fNum()"><div class="button number">0</div>
+            <button onclick="fNegative()"><div class="button">(-)</div>
+            <button onclick="fEquals()"><div id="equals" class="button">=</div>
+
+            </div>
+            
+            <p id ="note"></p>
+
+        </div>
+    </section>
+    
+    <script src="index.js"></script>
+
+</body>
+</html>
